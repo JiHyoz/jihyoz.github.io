@@ -2,3 +2,5 @@ baseURL = 'https://jihyoz.github.io/'
 locale = 'zh-cn'
 title = '技术博客'
 theme = 'PaperMod'
+# 重要：确保构建产物在 public
+publishDir = "public"
