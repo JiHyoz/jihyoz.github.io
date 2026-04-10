@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>技术博客</title>
-    <link>http://localhost:1313/</link>
+    <link>https://jihyoz.github.io/</link>
     <description>Recent content on 技术博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 01 Jan 2025 12:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jihyoz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的第一篇测试文章</title>
-      <link>http://localhost:1313/posts/test/</link>
+      <link>https://jihyoz.github.io/posts/test/</link>
       <pubDate>Wed, 01 Jan 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/test/</guid>
+      <guid>https://jihyoz.github.io/posts/test/</guid>
       <description>&lt;p&gt;这里写文章内容，我成功发布啦！&lt;/p&gt;</description>
     </item>
   </channel>
