@@ -1,0 +1,4 @@
+baseURL = 'https://jihyoz.github.io/'
+locale = 'zh-cn'
+title = '技术博客'
+theme = 'PaperMod'
