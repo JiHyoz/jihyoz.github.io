@@ -6,6 +6,14 @@
     <description>Recent content on 技术博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Wed, 01 Jan 2025 12:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇测试文章</title>
+      <link>http://localhost:1313/posts/test/</link>
+      <pubDate>Wed, 01 Jan 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/test/</guid>
+      <description>&lt;p&gt;这里写文章内容，我成功发布啦！&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
