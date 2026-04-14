@@ -4,7 +4,7 @@ subtitle:
 date: 2026-04-14T20:54:05+08:00
 # 这个slug是一个临时url，但我觉得FixIt主题做得有些多余了，如果删除掉，则url就是md文件名
 slug: e2aee69
-draft: true
+draft: false
 author:
   name:
   link:

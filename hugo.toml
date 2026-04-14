@@ -2,7 +2,6 @@ baseURL = 'https://jihyoz.github.io/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh-cn'
 languageCode = "zh-CN"
-title = '技术博客'
 theme = "FixIt"
 hasCJKLanguage = true
 # default amount of posts in each pages
