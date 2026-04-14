@@ -101,7 +101,7 @@ pagination.pagerSize = 6
 
   [params.author]
     name = "JiHyoz"
-    avatar = "/Blog.png"
+    avatar = "./Blog.png"
 
   [params.page.code]
     # 不显示代码编辑按钮
