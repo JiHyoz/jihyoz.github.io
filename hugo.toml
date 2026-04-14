@@ -101,7 +101,7 @@ pagination.pagerSize = 6
 
   [params.author]
     name = "JiHyoz"
-    avatar = "./Blog.png"
+    avatar = "/Blog.png"
 
   [params.page.code]
     # 不显示代码编辑按钮
@@ -165,7 +165,7 @@ pagination.pagerSize = 6
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/Blog.png"
+      logo = "./Blog.png"
       # title name
       name = "个人技术博客"
       # whether to use typeit animation for title name
