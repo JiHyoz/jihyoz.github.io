@@ -1,0 +1,219 @@
+baseURL = 'https://jihyoz.github.io/'
+locale = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+languageCode = "zh-CN"
+title = '技术博客'
+theme = "FixIt"
+hasCJKLanguage = true
+# default amount of posts in each pages
+pagination.pagerSize = 6
+
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+    [menu.main.params]
+      icon = "fa-solid fa-archive"
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-folder-tree"
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 3
+    [menu.main.params]
+      icon = "fa-solid fa-tags"
+
+[outputFormats]
+  # FixIt 0.3.0 | NEW Options to make output /archives/index.html file
+  [outputFormats.archives]
+    path = "archives"
+    baseName = "index"
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    permalinkable = true
+    notAlternative = true
+  # FixIt 0.3.0 | NEW Options to make output /offline/index.html file
+  [outputFormats.offline]
+    path = "offline"
+    baseName = "index"
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    permalinkable = true
+    notAlternative = true
+  # FixIt 0.3.0 | NEW Options to make output readme.md file
+  [outputFormats.readme]
+    baseName = "readme"
+    mediaType = "text/markdown"
+    isPlainText = true
+    isHTML = false
+    notAlternative = true
+  # FixIt 0.3.10 | NEW Options to make output search.json file
+  [outputFormats.search]
+    baseName = "search"
+    mediaType = "application/json"
+    rel = "search"
+    isPlainText = true
+    isHTML = false
+    permalinkable = true
+
+[outputs]
+  home = ["html", "rss", "archives", "offline", "search"]
+  page = ["html", "markdown"]
+  section = ["html", "rss"]
+  taxonomy = ["html"]
+  term = ["html", "rss"]
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+  category = "categories"
+  collection = "collections"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    guessSyntax = true
+
+[params]
+  dateFormat = "2006-01-02"
+
+  # FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
+  # remember to set up your site subtitle by `params.header.subtitle.name`
+  indexWithSubtitle = true
+  # FixIt 0.3.13 | NEW whether to show summary in plain text
+  summaryPlainify = true
+
+  [params.author]
+    name = "JiHyoz"
+    avatar = "/Blog.png"
+
+  [params.page.code]
+    # 不显示代码编辑按钮
+    edit = false
+    # 代码块默认不折叠
+    maxShownLines = -1
+
+  [params.tagcloud]
+    enable = true
+    min = 14
+    max = 32
+    peakCount = 10
+    orderby = "name"
+
+  # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
+  [params.archives]
+    # special amount of posts in archives page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+  # Section page config (all pages in section)
+  [params.section]
+    # special amount of pages in each section page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # FixIt 0.3.10 | NEW Section feed config for RSS, Atom and JSON feed.
+    [params.section.feed]
+      # The number of posts to include in the feed. If set to -1, all posts.
+      limit = -1
+      # whether to show the full text content in feed.
+      fullText = false
+
+  # Term list (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # FixIt 0.3.10 | NEW Term list feed config for RSS, Atom and JSON feed.
+    [params.list.feed]
+      # The number of posts to include in the feed. If set to -1, all posts.
+      limit = -1
+      # whether to show the full text content in feed.
+      fullText = false
+
+  # FixIt 0.3.13 | NEW recently updated pages config for archives, section and term list
+  [params.recentlyUpdated]
+    archives = true
+    section = true
+    list = true
+    days = 30
+    maxCount = 10
+
+  # Header config
+  [params.header]
+    # FixIt 0.2.13 | CHANGED desktop header mode ["sticky", "normal", "auto"]
+    desktopMode = "sticky"
+    # FixIt 0.2.13 | CHANGED mobile header mode ["sticky", "normal", "auto"]
+    mobileMode = "auto"
+    # Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = "/Blog.png"
+      # title name
+      name = "个人技术博客"
+      # whether to use typeit animation for title name
+      typeit = false
+    # FixIt 0.2.12 | NEW Header subtitle config
+    [params.header.subtitle]
+      # subtitle name
+      name = "Per aspera ad astra"
+      # whether to use typeit animation for subtitle name
+      typeit = true
+
+  # FixIt 0.2.18 | NEW Breadcrumb config
+  [params.breadcrumb]
+    enable = true
+    sticky = false
+    showHome = true
+    # FixIt 0.3.13 | NEW
+    separator = "/"
+    capitalize = true
+
+  # FixIt 0.3.10 | NEW Post navigation config
+  [params.navigation]
+    # whether to show the post navigation in section pages scope
+    inSection = true
+    # whether to reverse the next/previous post navigation order
+    reverse = false
+
+  # Footer config
+  [params.footer]
+    enable = true
+    copyright = true
+    author = true
+    # FixIt 0.3.0 | NEW whether to show Hugo and theme info
+    [params.footer.powered]
+      enable = true
+      hugoLogo = false
+      themeLogo = false
+
+  # Page config
+  [params.page]
+    # license info (HTML format is supported)
+    license = ''
+    # whether to show link to Raw Markdown content of the post
+    linkToMarkdown = false
+    # FixIt 0.3.0 | NEW whether to show link to view source code of the post
+    linkToSource = false
+    # FixIt 0.3.0 | NEW whether to show link to edit the post
+    linkToEdit = false
+    # FixIt 0.2.17 | NEW whether to enable readingTime
+    readingTime = false
